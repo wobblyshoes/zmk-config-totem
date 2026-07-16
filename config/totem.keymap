@@ -27,7 +27,7 @@
             >;
         };
 
-        nav_num {
+        nav {
             bindings = <
        &none  &none               &none   &none         &none            &none  &none     &kp PAGE_UP    &none         &none
        &none  &kp LG(LEFT_SHIFT)  &none   &kp LEFT_GUI  &kp LA(RIGHT)    &none  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
@@ -36,7 +36,7 @@
             >;
         };
 
-        sym_func {
+        sym {
             bindings = <
        &kp GRAVE   &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR    &kp UNDER
        &kp EXCL    &kp ASTRK      &kp SLASH         &kp KP_EQUAL       &kp AMPS       &kp POUND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI      &kp DOUBLE_QUOTES
@@ -54,7 +54,7 @@
             >;
         };
 
-        layer_7 {
+        num {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
