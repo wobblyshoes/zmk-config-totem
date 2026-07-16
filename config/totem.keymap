@@ -21,9 +21,9 @@
         base {
             bindings = <
                &kp B             &kp L               &kp D           &kp C           &kp V          &kp Q       &kp Y            &kp O                       &kp U                        &kp SEMICOLON
-               &mt LEFT_SHIFT N  &lt 4 R             &lt 1 T         &lt 2 S         &kp G          &kp P       &lt 2 H          &lt 3 A                     &lt 4 E                      &mt RIGHT_SHIFT RS(I)
+               &mt LEFT_SHIFT N  &lt 0 R             &lt 1 T         &lt 2 S         &kp G          &kp P       &lt 2 H          &lt 3 A                     &lt 0 E                      &mt RIGHT_SHIFT RS(I)
 &kp BACKSPACE  &kp X             &mt LEFT_CONTROL J  &mt LEFT_ALT M  &mt LEFT_GUI W  &kp Z          &kp K       &mt RIGHT_GUI F  &mt RIGHT_ALT SINGLE_QUOTE  &mt RIGHT_CONTROL RC(COMMA)  &kp PERIOD             &kp LS(ENTER)
-                                                     &none           &kp TAB         &lt 6 SPACE    &sk RSHIFT  &none            &none
+                                                     &none           &kp TAB         &lt 0 SPACE    &sk RSHIFT  &none            &none
             >;
         };
 
@@ -54,11 +54,23 @@
             >;
         };
 
-        extra1 { status = "reserved"; };
+        layer_7 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
 
-        extra2 { status = "reserved"; };
-
-        extra3 { status = "reserved"; };
+        layer_8 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
