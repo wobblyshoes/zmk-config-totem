@@ -21,18 +21,18 @@
         base {
             bindings = <
                &kp B             &kp L               &kp D           &kp C           &kp V          &kp Q       &kp Y            &kp O                       &kp U                        &kp SEMICOLON
-               &mt LEFT_SHIFT N  &lt 0 R             &lt 1 T         &lt 2 S         &kp G          &kp P       &lt 2 H          &lt 3 A                     &lt 0 E                      &mt RIGHT_SHIFT RS(I)
+               &mt LEFT_SHIFT N  &lt 5 R             &lt 1 T         &lt 2 S         &kp G          &kp P       &lt 2 H          &lt 3 A                     &lt 4 E                      &mt RIGHT_SHIFT RS(I)
 &kp BACKSPACE  &kp X             &mt LEFT_CONTROL J  &mt LEFT_ALT M  &mt LEFT_GUI W  &kp Z          &kp K       &mt RIGHT_GUI F  &mt RIGHT_ALT SINGLE_QUOTE  &mt RIGHT_CONTROL RC(COMMA)  &kp PERIOD             &kp LS(ENTER)
-                                                     &none           &kp TAB         &lt 0 SPACE    &sk RSHIFT  &none            &none
+                                                     &kp ESC         &kp TAB         &lt 6 SPACE    &sk RSHIFT  &none            &none
             >;
         };
 
         nav {
             bindings = <
-       &none  &none               &none   &none         &none            &none  &none     &kp PAGE_UP    &none         &none
-       &none  &kp LG(LEFT_SHIFT)  &none   &kp LEFT_GUI  &kp LA(RIGHT)    &none  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
-&none  &none  &none               &none   &none         &none            &none  &kp HOME  &kp PAGE_DOWN  &kp END       &none      &none
-                                  &trans  &trans        &trans           &to 1  &none     &none
+       &none  &none               &none   &none         &none     &none  &none     &kp PAGE_UP    &none         &none
+       &none  &kp LG(LEFT_SHIFT)  &none   &kp LEFT_GUI  &none     &none  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
+&none  &none  &none               &none   &none         &none     &none  &kp HOME  &kp PAGE_DOWN  &kp END       &none      &none
+                                  &trans  &trans        &trans    &to 1  &none     &none
             >;
         };
 
@@ -47,28 +47,37 @@
 
         device {
             bindings = <
-       &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  &none    &none         &none         &none         &none         &none
-&none  &none       &none                 &none                 &none             &none    &none         &none         &none         &none         &none         &bt BT_CLR
-                                         &none                 &none             &none    &none         &none         &none
+            &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none           &none  &none  &none  &none  &none
+            &kp K_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  &none           &none  &none  &none  &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3      &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
+                                                &none                 &none             &none           &none  &none  &none
             >;
         };
 
         num {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp SLASH    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTRK    &trans  &trans  &trans  &trans  &trans
+        &kp MINUS    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS     &trans  &trans  &trans  &trans  &trans
+&trans  &kp PERCENT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans           &trans           &kp N0       &trans  &trans  &trans
             >;
         };
 
-        layer_8 {
+        function {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans            &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans  &trans  &kp LC(LEFT_ALT)  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans            &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                        &trans            &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        acc {
+            bindings = <
+        &trans  &trans  &trans  &trans        &trans    &trans             &kp ESC  &kp COLON  &kp W        &kp Q
+        &trans  &trans  &trans  &kp LEFT_GUI  &trans    &trans             &trans   &kp SLASH  &kp PERCENT  &kp EXCL
+&trans  &trans  &trans  &trans  &trans        &trans    &kp RC(BACKSPACE)  &trans   &trans     &trans       &trans    &trans
+                        &trans  &trans        &trans    &trans             &trans   &trans
             >;
         };
     };
