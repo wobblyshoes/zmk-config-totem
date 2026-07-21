@@ -52,7 +52,7 @@
             bindings = <
                &kp B             &kp L               &kp D           &kp C           &kp V          &kp Q       &kp Y            &kp O                       &kp U                    &kp SEMICOLON
                &mt LEFT_SHIFT N  &lt 5 R             &lt 1 T         &lt 2 S         &kp G          &kp P       &lt 2 H          &lt 3 A                     &lt 4 E                  &mt RIGHT_SHIFT I
-&kp BACKSPACE  &kp X             &mt LEFT_CONTROL J  &mt LEFT_ALT M  &mt LEFT_GUI W  &kp Z          &kp K       &mt RIGHT_GUI F  &mt RIGHT_ALT SINGLE_QUOTE  &mt RIGHT_CONTROL COMMA  &kp PERIOD         &kp LS(ENTER)
+&kp BACKSPACE  &kp X             &mt LEFT_CONTROL J  &mt LEFT_ALT M  &mt LEFT_GUI W  &kp Z          &kp K       &mt RIGHT_GUI F  &mt RIGHT_ALT SINGLE_QUOTE  &mt RIGHT_CONTROL COMMA  &kp PERIOD         &kp ENTER
                                                      &kp ESC         &kp TAB         &lt 6 SPACE    &sk RSHIFT  &caps_word       &caps_word
             >;
         };
